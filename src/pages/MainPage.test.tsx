@@ -13,11 +13,11 @@ test('renders description sections', () => {
   expect(screen.getByText(/zewnętrzne jacuzzi/)).toBeInTheDocument();
 });
 
-test('renders phone number as a tel link', () => {
+test('renders email as a mailto link', () => {
   render(<MainPage />);
-  const phoneLink = screen.getByText('(+48) 733 314 441');
-  expect(phoneLink).toBeInTheDocument();
-  expect(phoneLink.closest('a')).toHaveAttribute('href', 'tel:+48733314441');
+  const emailLink = screen.getByText('biuro@mlynmodry.pl');
+  expect(emailLink).toBeInTheDocument();
+  expect(emailLink.closest('a')).toHaveAttribute('href', 'mailto:biuro@mlynmodry.pl');
 });
 
 test('renders gallery placeholders', () => {

@@ -15,6 +15,7 @@
     "i18next": "^26.0.1",
     "react": "^19.2.4",
     "react-bootstrap": "^2.10.10",
+    "react-calendar": "^6.0.0",
     "react-dom": "^19.2.4",
     "react-i18next": "^17.0.1",
     "react-router-dom": "^7.13.2",
@@ -38,7 +39,9 @@
     "moduleNameMapper": {
       "^react-router-dom$": "react-router-dom/dist/index.js",
       "^react-router$": "react-router/dist/production/index.js",
-      "^react-router/dom$": "react-router/dist/production/dom-export.js"
+      "^react-router/dom$": "react-router/dist/production/dom-export.js",
+      "^react-calendar$": "<rootDir>/src/__mocks__/react-calendar.tsx",
+      "^react-calendar/dist/Calendar.css$": "<rootDir>/src/__mocks__/react-calendar.tsx"
     }
   },
   "browserslist": {

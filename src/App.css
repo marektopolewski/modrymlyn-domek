@@ -9,3 +9,25 @@
   border-radius: 8px;
   padding: 2rem;
 }
+
+.react-calendar {
+  margin: 0 auto;
+  border: none;
+  background: transparent;
+  width: 100%;
+  max-width: 420px;
+}
+
+.unavailable-date {
+  background-color: #f8d7da !important;
+  color: #842029 !important;
+}
+
+.past-date {
+  background-color: #e9ecef !important;
+  color: #adb5bd !important;
+}
+
+.react-calendar__tile:disabled {
+  cursor: default;
+}

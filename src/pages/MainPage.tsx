@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Container } from 'react-bootstrap';
 import ImageGallery from '../components/ImageGallery';
+import AvailabilityCalendar from '../components/AvailabilityCalendar';
 
 function MainPage() {
   const { t } = useTranslation();
@@ -29,9 +30,13 @@ function MainPage() {
       </div>
 
       <div className="content-panel">
+        <AvailabilityCalendar />
+      </div>
+
+      <div className="content-panel">
         <p className="fs-5">{t('contact')}</p>
-        <a href="tel:+48733314441" className="fs-3 fw-bold text-decoration-none">
-          (+48) 733 314 441
+        <a href="mailto:biuro@mlynmodry.pl" className="fs-3 fw-bold text-decoration-none">
+          biuro@mlynmodry.pl
         </a>
       </div>
     </Container>
