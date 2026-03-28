@@ -8,7 +8,6 @@ A cottage rental website for **Modry Mlyn** in Zbychowo, Kashubia. Lists a year-
 - Polish/English language toggle
 - Responsive layout with React Bootstrap
 - Placeholder image gallery (ready for real photos)
-- Accessible (wheelchair-friendly property info)
 
 ## Tech stack
 
