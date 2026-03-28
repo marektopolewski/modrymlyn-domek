@@ -21,6 +21,7 @@ function AppNavbar() {
               <Image src={euIcon} alt="" height={20} />
               {t('grantNav')}
             </Nav.Link>
+            <div className="vr d-none d-sm-block mx-1 align-self-center" style={{ height: 20 }} />
             <LanguageSwitch />
           </Nav>
         </Navbar.Collapse>
