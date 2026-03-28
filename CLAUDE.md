@@ -22,6 +22,7 @@
 - Translations are bundled inline (no HTTP backend) — add keys to both `pl.json` and `en.json`
 - Use React Bootstrap components and utility classes for layout; minimize custom CSS
 - Tests import i18n globally via `setupTests.ts`
+- All text content containers must use the `content-panel` CSS class (semi-transparent background over the repeating pattern) — defined in `App.css`
 
 ## Known workarounds
 - `package.json` has a Jest `moduleNameMapper` to resolve react-router-dom v7 — CRA's Jest doesn't support the `exports` field in package.json

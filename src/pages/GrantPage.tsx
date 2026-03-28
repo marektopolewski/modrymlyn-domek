@@ -5,12 +5,14 @@ function GrantPage() {
   const { t } = useTranslation();
 
   return (
-    <Container className="py-4 text-center">
-      <h2 className="mb-4">{t('grantTitle')}</h2>
+    <Container className="py-4 text-center d-flex flex-column gap-3">
+      <div className="content-panel">
+        <h2>{t('grantTitle')}</h2>
+      </div>
 
       <div
-        className="d-flex align-items-center justify-content-center bg-secondary text-white mx-auto"
-        style={{ height: 200, maxWidth: 600 }}
+        className="content-panel d-flex align-items-center justify-content-center bg-secondary text-white mx-auto"
+        style={{ height: 200, maxWidth: 600, width: '100%' }}
       >
         <span className="fs-5">{t('bannerPlaceholder')}</span>
       </div>

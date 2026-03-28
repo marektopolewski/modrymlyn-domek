@@ -3,12 +3,14 @@ import MainPage from './MainPage';
 
 test('renders main title in Polish', () => {
   render(<MainPage />);
-  expect(screen.getByText('Modry Młyn: Wynajem domku na Kaszubach')).toBeInTheDocument();
+  expect(screen.getByText('Wynajem domku na Kaszubach')).toBeInTheDocument();
 });
 
-test('renders description', () => {
+test('renders description sections', () => {
   render(<MainPage />);
-  expect(screen.getByText(/Wynajem całorocznego domku letniskowego/)).toBeInTheDocument();
+  expect(screen.getByText(/Zapraszamy do naszego przytulnego/)).toBeInTheDocument();
+  expect(screen.getByText(/w pełni wyposażony/)).toBeInTheDocument();
+  expect(screen.getByText(/zewnętrzne jacuzzi/)).toBeInTheDocument();
 });
 
 test('renders phone number as a tel link', () => {

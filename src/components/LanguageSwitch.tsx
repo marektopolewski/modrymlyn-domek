@@ -7,7 +7,7 @@ function LanguageSwitch() {
 
   return (
     <Button
-      variant="outline-light"
+      variant="outline-dark"
       size="sm"
       onClick={() => i18n.changeLanguage(nextLang)}
       aria-label={`Switch to ${nextLang.toUpperCase()}`}

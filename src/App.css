@@ -3,3 +3,9 @@
   background-repeat: repeat;
   min-height: 100vh;
 }
+
+.content-panel {
+  background-color: rgba(216, 216, 214, 0.85);
+  border-radius: 8px;
+  padding: 2rem;
+}

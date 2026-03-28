@@ -9,7 +9,7 @@ function AppNavbar() {
   const { t } = useTranslation();
 
   return (
-    <Navbar bg="dark" variant="dark" expand="sm" sticky="top">
+    <Navbar expand="sm" sticky="top" style={{ backgroundColor: '#d8d8d6' }}>
       <Container>
         <Navbar.Brand as={Link} to="/">
           <Image src={navLogo} alt="Modry Młyn" height={40} />

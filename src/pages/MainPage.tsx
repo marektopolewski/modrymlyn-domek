@@ -1,20 +1,34 @@
 import { useTranslation } from 'react-i18next';
-import { Container, Image } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import ImageGallery from '../components/ImageGallery';
-import logo from '../assets/mlyn_logo.jpg';
 
 function MainPage() {
   const { t } = useTranslation();
 
   return (
-    <Container className="py-4 text-center">
-      <Image src={logo} alt="Modry Młyn" className="mb-4" style={{ maxHeight: 200 }} />
-      <h1>{t('mainTitle')}</h1>
-      <p className="lead my-4">{t('description')}</p>
+    <Container className="py-4 text-center d-flex flex-column gap-3">
+      <div className="content-panel">
+        <h1>{t('mainTitle')}</h1>
+        <p className="lead mb-0">{t('summary')}</p>
+      </div>
 
-      <ImageGallery />
+      <div className="content-panel">
+        <ImageGallery />
+      </div>
 
-      <div className="mt-5">
+      <div className="content-panel">
+        <p className="lead mb-0">{t('descriptionIntro')}</p>
+      </div>
+
+      <div className="content-panel">
+        <p className="lead mb-0">{t('descriptionAmenities')}</p>
+      </div>
+
+      <div className="content-panel">
+        <p className="lead mb-0">{t('descriptionActivities')}</p>
+      </div>
+
+      <div className="content-panel">
         <p className="fs-5">{t('contact')}</p>
         <a href="tel:+48733314441" className="fs-3 fw-bold text-decoration-none">
           (+48) 733 314 441
