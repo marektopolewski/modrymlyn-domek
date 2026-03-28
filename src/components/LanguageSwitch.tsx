@@ -1,19 +1,17 @@
 import { useTranslation } from 'react-i18next';
-import { Button } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 
 function LanguageSwitch() {
   const { i18n } = useTranslation();
   const nextLang = i18n.language === 'pl' ? 'en' : 'pl';
 
   return (
-    <Button
-      variant="outline-dark"
-      size="sm"
+    <Nav.Link
       onClick={() => i18n.changeLanguage(nextLang)}
       aria-label={`Switch to ${nextLang.toUpperCase()}`}
     >
-      {nextLang.toUpperCase()}
-    </Button>
+      {nextLang === 'en' ? '🇬🇧' : '🇵🇱'} {nextLang.toUpperCase()}
+    </Nav.Link>
   );
 }
 

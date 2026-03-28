@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Container, Nav } from 'react-bootstrap';
 
 function GrantPage() {
   const { t } = useTranslation();
@@ -15,6 +16,12 @@ function GrantPage() {
         style={{ height: 200, maxWidth: 600, width: '100%' }}
       >
         <span className="fs-5">{t('bannerPlaceholder')}</span>
+      </div>
+
+      <div className="content-panel">
+        <Nav.Link as={Link} to="/" className="fs-5 text-decoration-none">
+          {t('back')}
+        </Nav.Link>
       </div>
     </Container>
   );
