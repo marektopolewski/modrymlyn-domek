@@ -32,6 +32,7 @@ function AvailabilityCalendar() {
         tileClassName={tileClassName}
         minDate={today}
         maxDate={maxDate}
+        showNeighboringMonth={false}
       />
       <p className="mt-3 mb-0 small text-muted">
         <span
