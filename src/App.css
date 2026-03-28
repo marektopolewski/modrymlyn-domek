@@ -28,6 +28,11 @@
   color: #adb5bd !important;
 }
 
+/* Reserve space for 6 rows so layout doesn't shift between months */
+.react-calendar__month-view__days {
+  min-height: calc(6 * 2.75em);
+}
+
 .react-calendar__tile:disabled {
   cursor: default;
 }
