@@ -20,6 +20,7 @@
 ## Key conventions
 - Polish is the default language (`lng: 'pl'`)
 - Translations are bundled inline (no HTTP backend) — add keys to both `pl.json` and `en.json`
+- For text that should stay in Polish regardless of language (e.g. grant title), omit the key from `en.json` — i18next falls back to `pl.json` automatically
 - Use React Bootstrap components and utility classes for layout; minimize custom CSS
 - Tests import i18n globally via `setupTests.ts`
 - All text content containers must use the `content-panel` CSS class (semi-transparent background over the repeating pattern) — defined in `App.css`
