@@ -20,7 +20,8 @@ test('renders email as a mailto link', () => {
   expect(emailLink.closest('a')).toHaveAttribute('href', 'mailto:biuro@mlynmodry.pl');
 });
 
-test('renders gallery placeholders', () => {
+test('renders gallery images', () => {
   render(<MainPage />);
-  expect(screen.getByText(/Zdjęcie wkrótce 1/)).toBeInTheDocument();
+  const photos = screen.getAllByAltText(/Zdjęcie domku/);
+  expect(photos.length).toBeGreaterThan(0);
 });
