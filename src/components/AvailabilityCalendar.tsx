@@ -34,13 +34,14 @@ function AvailabilityCalendar() {
         maxDate={maxDate}
         showNeighboringMonth={false}
       />
-      <p className="mt-3 mb-0 small text-muted">
+      <p className="mt-3 mb-2 small text-muted">
         <span
           className="d-inline-block align-middle me-1"
           style={{ width: 12, height: 12, backgroundColor: '#f8d7da', borderRadius: 2 }}
         />
         {t('calendarUnavailable')}
       </p>
+      <p className="mb-0 small fst-italic text-muted">{t('calendarDisclaimer')}</p>
     </div>
   );
 }
