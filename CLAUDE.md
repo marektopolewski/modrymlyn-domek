@@ -5,6 +5,7 @@
 - `npm test` — run tests (Jest + React Testing Library)
 - `npm run build` — production build
 - `npm install --legacy-peer-deps` — required flag due to react-scripts 5 / TypeScript 6 / i18next peer dep conflicts
+- `./deploy.sh` — deploy to production (see `.claude/DEPLOYMENT.md` for details)
 
 ## Stack
 - React 19, TypeScript 6, Create React App (react-scripts 5.0.1)
