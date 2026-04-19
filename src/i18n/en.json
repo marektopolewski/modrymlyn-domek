@@ -11,5 +11,13 @@
   "calendarTitle": "Availability",
   "calendarUnavailable": "Unavailable",
   "calendarDisclaimer": "ℹ️ The availability shown may differ from the actual one – contact us to confirm current open dates.",
+  "cennikTitle": "Pricing",
+  "cennikPricePerNight": "Price per night",
+  "cennikMinStay": "Minimum stay",
+  "cennikMinStayValue": "2 nights",
+  "cennikCheckIn": "Check-in",
+  "cennikCheckOut": "Check-out",
+  "cennikPrepay": "Prepayment",
+  "cennikDisclaimer": "ℹ️ Prices and terms are subject to change – contact us to confirm the latest info.",
   "back": "← Back"
 }

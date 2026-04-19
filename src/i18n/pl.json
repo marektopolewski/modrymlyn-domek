@@ -12,5 +12,13 @@
   "calendarTitle": "Dostępność",
   "calendarUnavailable": "Niedostępne",
   "calendarDisclaimer": "ℹ️ Dostępność w kalendarzu może się różnić od rzeczywistej – napisz do nas, aby potwierdzić aktualne wolne terminy.",
+  "cennikTitle": "Cennik",
+  "cennikPricePerNight": "Cena za dobę",
+  "cennikMinStay": "Minimalny pobyt",
+  "cennikMinStayValue": "2 doby",
+  "cennikCheckIn": "Zameldowanie",
+  "cennikCheckOut": "Wymeldowanie",
+  "cennikPrepay": "Zaliczka",
+  "cennikDisclaimer": "ℹ️ Ceny i warunki mogą ulec zmianie – napisz do nas, aby potwierdzić aktualne informacje.",
   "back": "← Powrót"
 }

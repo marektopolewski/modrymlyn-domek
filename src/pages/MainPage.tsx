@@ -34,6 +34,23 @@ function MainPage() {
       </div>
 
       <div className="content-panel">
+        <h5 className="mb-3">{t('cennikTitle')}</h5>
+        <dl className="row mb-0 text-start mx-auto" style={{ maxWidth: 480 }}>
+          <dt className="col-6">{t('cennikPricePerNight')}</dt>
+          <dd className="col-6 mb-2">1000 PLN</dd>
+          <dt className="col-6">{t('cennikMinStay')}</dt>
+          <dd className="col-6 mb-2">{t('cennikMinStayValue')}</dd>
+          <dt className="col-6">{t('cennikCheckIn')}</dt>
+          <dd className="col-6 mb-2">17:00–22:00</dd>
+          <dt className="col-6">{t('cennikCheckOut')}</dt>
+          <dd className="col-6 mb-2">10:00–12:00</dd>
+          <dt className="col-6">{t('cennikPrepay')}</dt>
+          <dd className="col-6 mb-0">50%</dd>
+        </dl>
+        <p className="mt-3 mb-0 small fst-italic text-muted">{t('cennikDisclaimer')}</p>
+      </div>
+
+      <div className="content-panel">
         <p className="fs-5">{t('contact')}</p>
         <a href="mailto:biuro@mlynmodry.pl" className="fs-3 fw-bold text-decoration-none">
           biuro@mlynmodry.pl
