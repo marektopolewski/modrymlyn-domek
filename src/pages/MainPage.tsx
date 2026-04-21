@@ -1,7 +1,16 @@
 import { useTranslation } from 'react-i18next';
-import { Container } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 import ImageGallery from '../components/ImageGallery';
 import AvailabilityCalendar from '../components/AvailabilityCalendar';
+
+const priceTiers: Array<[number, number]> = [
+  [1, 950],
+  [2, 1600],
+  [3, 2400],
+  [4, 2800],
+  [5, 3500],
+  [6, 4200],
+];
 
 function MainPage() {
   const { t } = useTranslation();
@@ -35,18 +44,57 @@ function MainPage() {
 
       <div className="content-panel">
         <h5 className="mb-3">{t('cennikTitle')}</h5>
-        <dl className="row mb-0 text-start mx-auto" style={{ maxWidth: 480 }}>
-          <dt className="col-6">{t('cennikPricePerNight')}</dt>
-          <dd className="col-6 mb-2">1000 PLN</dd>
-          <dt className="col-6">{t('cennikMinStay')}</dt>
-          <dd className="col-6 mb-2">{t('cennikMinStayValue')}</dd>
-          <dt className="col-6">{t('cennikCheckIn')}</dt>
-          <dd className="col-6 mb-2">17:00–22:00</dd>
-          <dt className="col-6">{t('cennikCheckOut')}</dt>
-          <dd className="col-6 mb-2">10:00–12:00</dd>
-          <dt className="col-6">{t('cennikPrepay')}</dt>
-          <dd className="col-6 mb-0">50%</dd>
-        </dl>
+        <Table
+          borderless
+          size="sm"
+          className="mb-3 mx-auto"
+          style={{
+            maxWidth: 320,
+            '--bs-table-bg': 'transparent',
+            '--bs-table-cell-padding-x': 0,
+          } as React.CSSProperties}
+        >
+          <thead>
+            <tr>
+              <th className="fw-semibold text-start">{t('cennikNightsColumn')}</th>
+              <th className="fw-semibold text-end">{t('cennikPriceColumn')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {priceTiers.map(([nights, price]) => (
+              <tr key={nights}>
+                <td className="text-start">{nights}</td>
+                <td className="text-end">{price} PLN</td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+        <p className="mb-3 fw-semibold">{t('cennikSummerRule')}</p>
+        <Table
+          borderless
+          size="sm"
+          className="mb-0 mx-auto"
+          style={{
+            maxWidth: 320,
+            '--bs-table-bg': 'transparent',
+            '--bs-table-cell-padding-x': 0,
+          } as React.CSSProperties}
+        >
+          <tbody>
+            <tr>
+              <td className="text-start">{t('cennikCheckIn')}</td>
+              <td className="text-end">17:00–22:00</td>
+            </tr>
+            <tr>
+              <td className="text-start">{t('cennikCheckOut')}</td>
+              <td className="text-end">10:00–12:00</td>
+            </tr>
+            <tr>
+              <td className="text-start">{t('cennikPrepay')}</td>
+              <td className="text-end">50%</td>
+            </tr>
+          </tbody>
+        </Table>
         <p className="mt-3 mb-0 small fst-italic text-muted">{t('cennikDisclaimer')}</p>
       </div>
 
