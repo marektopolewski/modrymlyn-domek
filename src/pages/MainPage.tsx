@@ -100,8 +100,11 @@ function MainPage() {
 
       <div className="content-panel">
         <p className="fs-5">{t('contact')}</p>
-        <a href="mailto:biuro@mlynmodry.pl" className="fs-3 fw-bold text-decoration-none">
+        <a href="mailto:biuro@mlynmodry.pl" className="fs-3 fw-bold text-decoration-none d-block">
           biuro@mlynmodry.pl
+        </a>
+        <a href="tel:+48505045952" className="fs-3 fw-bold text-decoration-none d-block mt-2">
+          +48 505 045 952
         </a>
       </div>
     </Container>
