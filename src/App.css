@@ -18,11 +18,6 @@
   max-width: 420px;
 }
 
-.unavailable-date {
-  background-color: #f8d7da !important;
-  color: #842029 !important;
-}
-
 .past-date {
   background-color: #e9ecef !important;
   color: #adb5bd !important;
