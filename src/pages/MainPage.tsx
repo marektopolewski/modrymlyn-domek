@@ -7,9 +7,10 @@ const priceTiers: Array<[number, number]> = [
   [1, 950],
   [2, 1600],
   [3, 2400],
-  [4, 2800],
+  [4, 3000],
   [5, 3500],
   [6, 4200],
+  [7, 4500],
 ];
 
 function MainPage() {
